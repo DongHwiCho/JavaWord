@@ -36,6 +36,15 @@ public class MainFrame {
         // 프레임에 텍스트 페인 추가
         frame.add(textPane);
 
+        /*
+        저장 버튼에 FileSave 클래스의 saveFile 메서드 연결
+        addActionListener를 통해 버튼을 연결해 이벤트를 처리함
+         */
+        FileSave fileSave = new FileSave(frame,textPane);
+        saveMenuItem.addActionListener(fileSave);
+        FileOpen fileOpen = new FileOpen(frame,textPane);
+        loadMenuItem.addActionListener(fileOpen);
+
         // 프레임 표시 설정 ( 항상 마지막에 실행 )
         frame.setVisible(true);
     }
