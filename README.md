@@ -1,4 +1,4 @@
-# Java Word
+# JavaWord
 
 인하대학교 객체지향프로그래밍 기말 프로젝트
 
