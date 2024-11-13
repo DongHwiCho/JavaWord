@@ -20,7 +20,7 @@ public class TopMenuBar {
         this.menuBar = new JMenuBar();
 
         // addMenu 메소드 실행
-        this.addMenu();
+        this.addItem();
 
         // 파일 저장, 불러오기 클래스 생성
         fileSave = new FileSave(frame,textPane);
@@ -29,7 +29,7 @@ public class TopMenuBar {
         this.addAction();
     }
 
-    private void addMenu(){
+    private void addItem(){
         // 메뉴 생성
         fileMenu = new JMenu("파일");
         aboutMenu = new JMenu("정보");
