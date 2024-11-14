@@ -1,5 +1,4 @@
 import javax.swing.*;
-import java.awt.*;
 
 public class MainFrame {
     public MainFrame() {
@@ -31,18 +30,18 @@ public class MainFrame {
         fileMenu.add(loadMenuItem);
         fileMenu.add(exitMenuItem);
 
-        // 텍스트 페인 생성
-        JTextPane textPane = new JTextPane();
-        // 프레임에 텍스트 페인 추가
-        frame.add(textPane);
+        // 텍스트 페인 매니저 생성
+        TextPaneManager textPaneManager = new TextPaneManager(frame);
+        // 텍스트 페인 생성 및 프레임에 추가
+        textPaneManager.createTextPane();
 
         /*
         저장 버튼에 FileSave 클래스의 saveFile 메서드 연결
         addActionListener를 통해 버튼을 연결해 이벤트를 처리함
          */
-        FileSave fileSave = new FileSave(frame,textPane);
+        FileSave fileSave = new FileSave(frame, textPaneManager.getTextPane());
         saveMenuItem.addActionListener(fileSave);
-        FileOpen fileOpen = new FileOpen(frame,textPane);
+        FileOpen fileOpen = new FileOpen(frame, textPaneManager.getTextPane());
         loadMenuItem.addActionListener(fileOpen);
 
         // 프레임 표시 설정 ( 항상 마지막에 실행 )
