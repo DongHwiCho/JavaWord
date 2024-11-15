@@ -22,6 +22,11 @@ public class MainFrame {
         // 프레임에 메뉴바 설정
         frame.setJMenuBar(menuBar.getMenuBar());
 
+        // 리본메뉴 생성
+        RibbonMenu ribbonMenu = new RibbonMenu(frame, textPane);
+        // 프레임에 리본메뉴 추가
+        frame.add(ribbonMenu.getToolbar());
+
         // 프레임 표시 설정 ( 항상 마지막에 실행 )
         frame.setVisible(true);
     }
