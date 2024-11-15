@@ -1,3 +1,5 @@
+package ckpy.util;
+
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.datatransfer.*;
@@ -9,7 +11,7 @@ import java.util.List;
 public class ImgDragAndDrop {
     JTextPane textPane;
     // FileSave 메소드에서 인코딩하기위해 스태틱메소드를 사용함 (추후 삽입 메소드에서도 사용하기 위함)
-    static BufferedImage image;
+    public static BufferedImage image;
 
     // 생성자 - JTextPane을 받아와 초기화
     public ImgDragAndDrop(JTextPane textPane) {

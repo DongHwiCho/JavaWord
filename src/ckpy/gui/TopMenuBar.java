@@ -1,7 +1,6 @@
 package ckpy.gui;
 
-import ckpy.util.FileOpen;
-import ckpy.util.FileSave;
+import ckpy.util.file.*;
 
 import javax.swing.*;
 
