@@ -1,5 +1,7 @@
 package ckpy.gui;
 
+import ckpy.util.ImgDragAndDrop;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -25,7 +27,10 @@ public class MainFrame {
         // 리본메뉴 생성
         RibbonMenu ribbonMenu = new RibbonMenu(frame, textPane);
         // 프레임에 리본메뉴 추가
-        frame.add(ribbonMenu.getToolbar());
+        frame.add(ribbonMenu.getToolbar(), BorderLayout.NORTH);;
+
+        // 이미지 드래그 앤 드롭
+        new ImgDragAndDrop(textPane);
 
         // 프레임 표시 설정 ( 항상 마지막에 실행 )
         frame.setVisible(true);
