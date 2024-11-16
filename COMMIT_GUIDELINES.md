@@ -12,7 +12,7 @@
 <푸터 (선택 사항)>
 ```
 
-### 1. **타입 (Type)**  
+### 1. **타입 (Type)**
 커밋의 목적을 명확히 하기 위해 다음 타입 중 하나를 선택합니다:
 
 - **feat**: 새로운 기능 추가
@@ -27,7 +27,7 @@
 
 ---
 
-### 2. **제목 (Title)**  
+### 2. **제목 (Title)**
 - 50자 이내로 간결하게 작성합니다.
 - 대문자로 시작하고, 마침표를 생략합니다.
 - 명령형 동사를 사용합니다.  
@@ -35,54 +35,52 @@
 
 ---
 
-### 3. **본문 (Body)** _(선택 사항)_  
+### 3. **본문 (Body)** _(선택 사항)_
 - 변경의 이유와 맥락을 72자 단위로 줄바꿈하여 자세히 설명합니다.
 - "왜"와 "무엇"을 중심으로 작성하세요.
 
 ---
 
-### 4. **푸터 (Footer)** _(선택 사항)_  
+### 4. **푸터 (Footer)** _(선택 사항)_
 - 중요한 참고 정보나 관련 이슈 번호를 포함합니다.
 - 예: `Closes #123` 또는 `Related to #456`
 
 ---
 
-## Examples
+## Examples (한국어)
 
 ### 간단한 커밋
 ```
-feat: Add user authentication module
+feat: 사용자 인증 모듈 추가
 ```
 
 ### 상세한 커밋
 ```
-fix: Resolve null pointer issue in login function
+fix: 로그인 기능에서 널 포인터 문제 해결
 
-The error occurred due to an uninitialized variable when the
-login form was submitted without entering any data. This fix
-ensures proper null-check validation.
+로그인 폼에 데이터를 입력하지 않고 제출할 경우 초기화되지 않은
+변수로 인해 오류가 발생했습니다. 이 수정은 적절한 null 체크
+유효성 검사를 보장합니다.
 
 Closes #42
 ```
 
 ### 리팩토링
 ```
-refactor: Simplify database query logic
+refactor: 데이터베이스 쿼리 로직 단순화
 
-Replaced nested queries with a single JOIN to improve readability
-and performance. No functionality was changed.
+중첩 쿼리를 단일 JOIN으로 대체하여 가독성과 성능을 개선했습니다.
+기능 변경은 없습니다.
 ```
 
 ### 문서 수정
 ```
-docs: Update README with installation instructions
+docs: 설치 지침으로 README 업데이트
 ```
 
 ### 작업 되돌리기
 ```
-revert: Revert "Add caching mechanism"
+revert: "캐싱 메커니즘 추가" 되돌리기
 
-This reverts commit 1a2b3c4d5e.
+이 커밋은 1a2b3c4d5e 커밋을 되돌립니다.
 ```
-
----
